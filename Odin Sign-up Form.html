@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-up Form</title>
+    
+<link rel="stylesheet" href="./Odin Sign-up Form_files/style.css"></head>
+<body>
+    <div class="sidebar">
+        <!-- <div>Here is the picture that should extend top to bottom</div> -->
+        <img src="./Odin Sign-up Form_files/sidebar-img.avif" alt="sidebar-img">
+        <div class="banner"><img src="./Odin Sign-up Form_files/odin-lined.png" alt="odinSymbol"> ODIN</div>
+    </div>
+    <div class="content">
+        <div class="header"><p>This is the header: "This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p></div>
+        <form>
+            <label>Let's do this!</label>
+            FIRST NAME
+            <input id="firstName" type="text">
+            LAST NAME
+            <input id="lastName" type="text">
+            EMAIL
+            <input id="email" type="email">
+            PHONE NUMBER
+            <input id="phoneNum" type="number">
+            <!-- check to see if there is a type for phone number -->
+            PASSWORD
+            <input id="pwd" type="password">
+            CONFIRM PASSWORD
+            <input id="pwd" type="password">
+            <!-- make sure that the passwords match -->
+            <button>Create Account</button>
+        </form>
+        Already have an account? 
+        <a href="http://127.0.0.1:5500/url">Log in</a>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

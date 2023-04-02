@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign-up Form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="sidebar">
+        <!-- <div>Here is the picture that should extend top to bottom</div> -->
+        <img src="sidebar-img.avif" alt="sidebar-img" id="sidebarIMG">
+        <div class="banner"><img src="odin-lined.png" alt="odinSymbol" id="odinIMG"> ODIN</div>
+    </div>
+    <div class="content">
+        <div class="header"><p>This is the header: "This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p></div>
+        Let's do this!
+        <form>
+                <label for="firstName" id="fnLAB" class="label">FIRST NAME</label>
+                <input id="firstName" type="text" name="firstName">
+            
+                <label for="lastName" id=lnLAB class="label">LAST NAME</label>
+                <input id="lastName" type="text" name="lastName">
+            
+                <label for="email" id="emLAB" class="label">E-MAIL</label>
+                <input id="email" type="email" name="email">
+            
+                <label for="phoneNum" id="pnLAB" class="label">PHONE NUMBER</label>
+                <input id="phoneNum" type="tel" name="phoneNum">
+            
+                <label for="pwd" id="pLAB" class="label">PASSWORD</label>
+                <input id="pwd" type="password" name="pwd">
+            
+                <label for="pwdCon" id="pcLAB" class="label">CONFIRM PASSWORD</label>
+                <input id="pwdCon" type="password" name="pwdCon">
+            
+            <!-- make sure that the passwords match -->
+            <button id="submit">Create Account</button>
+        </form>
+        Already have an account? 
+        <button><a href="url">Log in</a></button>
+    </div>
+    <script>
+        // submit button: if password1 !== password2, pop up a message to display that the passowrds need to match. Turn the input display and box color red/pink. Else if password1 === password2, then alert "account created" and then refdirect to home page
+    </script>
+</body>
+</html>
